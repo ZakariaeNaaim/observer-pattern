@@ -1,6 +1,4 @@
-package org.example2.comportementArme;
-
-import org.example2.ComportementArme;
+package org.example2.Strategie;
 
 public class Hache implements ComportementArme {
 

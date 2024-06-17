@@ -1,8 +1,6 @@
 package org.example2.Personnages;
 
-import org.example2.ComportementCombattre;
-
-public class Reine implements ComportementCombattre {
+public class Reine extends Personnage {
 
     @Override
     public void combattre() {
