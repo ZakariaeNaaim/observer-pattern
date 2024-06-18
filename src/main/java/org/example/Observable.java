@@ -1,13 +1,9 @@
 package org.example;
 
-public class Context {
-    private Strategy strategy=new DefaultStrategyImpl();
-    public void effectuerOperation() {
-        System.out.println("********************");
-        strategy.operationStrategy();
-        System.out.println("===================");
-    }
-    public void setStrategy(Strategy strategy) {
-        this.strategy = strategy;
-    }
+
+public interface Observable  {
+    public void subscribe(Observer observer);
+    public void unsubscribe(Observer observer);
+    public void notifyObservers();
+
 }
